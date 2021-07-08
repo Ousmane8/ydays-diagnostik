@@ -1,0 +1,137 @@
+body{
+  font-family: "Helvetica Neue",Sans-serif;
+  font-weight: 300;
+  letter-spacing: .6px;
+  color: $light-dark;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.main-btn {
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 15px 35px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all .3s;
+  text-align: center;
+
+  @media (max-width:767px) {
+    font-size: 16px;
+  }
+
+  &:hover {
+    background-color: white;
+    transition: all .3s;
+    color: $light-blue;
+  }
+}
+
+.blue-btn {
+  border: 2px solid $light-blue;
+  color: $light-blue;
+
+  background: linear-gradient(to right, white, white);
+  transition: all .3s;
+
+  &:hover {
+    background: linear-gradient(to right, $light-blue2 ,$light-blue);
+    border: 2px solid $light-blue!important;
+    transition: all .3s;
+    color: white;
+  }
+}
+
+.blue-bg {
+  background: $color_tropical_rain_forest_approx;
+  color: white;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 80px;
+  overflow-x: hidden;
+  @media (max-width:767px) {
+    padding: 30px 15px;
+  }
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.italic {
+  font-style: italic!important;
+}
+
+
+.loader-block {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: 999999;
+  background: $color_tropical_rain_forest_approx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loader {
+    border-radius: 100%;
+    position: relative;
+  }
+
+  #loader span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: white;
+    margin: 35px 5px;
+  }
+
+  #loader span:nth-child(1) {
+    animation: bounce 1s ease-in-out infinite;
+  }
+
+  #loader span:nth-child(2) {
+    animation: bounce 1s ease-in-out 0.33s infinite;
+  }
+
+  #loader span:nth-child(3) {
+    animation: bounce 1s ease-in-out 0.66s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 75%, 100% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+    }
+
+    25% {
+      -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+      -o-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  }
+}

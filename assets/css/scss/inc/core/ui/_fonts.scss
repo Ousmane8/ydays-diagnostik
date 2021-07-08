@@ -1,0 +1,83 @@
+// Fonts
+
+@include font-face(Caveat-Regular , '#{$path-fonts}Caveat-Regular/Caveat-Regular', null , null , woff2 woff ttf '');
+@include font-face(Caveat-Bold , '#{$path-fonts}Caveat-Bold/Caveat-Bold', null , null , woff2 woff ttf '');
+@include font-face(ArialMTPro-Light , '#{$path-fonts}ArialMTPro-Light/ArialMTPro-Light', null , null , woff2 woff ttf '');
+
+$font-text-caveat-regular: 'Caveat-Regular', 'Arial', 'Sans-serif';
+$font-text-caveat-bold: 'Caveat-Bold', 'Arial', 'Sans-serif';
+$font-text-arial: 'Arial', 'Sans-serif';
+$font-text-arial-MTPro-light: 'ArialMTPro-Light', 'Sans-serif';
+
+.font-caveat-reg{
+    font-family: $font-text-caveat-regular;
+}
+
+.font-caveat-bd{
+    font-family: $font-text-caveat-bold;
+}
+
+// Icons
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('#{$path-fonts}/icons/icomoon.eot?7e2elk');
+    src:  url('#{$path-fonts}/icons/icomoon.eot?7e2elk#iefix') format('embedded-opentype'),
+    url('#{$path-fonts}/icons/icomoon.ttf?7e2elk') format('truetype'),
+    url('#{$path-fonts}/icons/icomoon.woff?7e2elk') format('woff'),
+    url('#{$path-fonts}/icons/icomoon.svg?7e2elk#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left:before {
+  content: "\e909";
+  color: #fff;
+}
+.icon-arrow-right:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-video-play:before {
+    content: "\e908";
+    color: #3dcd58;
+}
+.icon-down-arrow:before {
+    content: "\e900";
+}
+.icon-call:before {
+    content: "\e901";
+}
+.icon-fb:before {
+    content: "\e902";
+}
+.icon-google:before {
+    content: "\e903";
+}
+.icon-linkedin:before {
+    content: "\e904";
+}
+.icon-logo:before {
+    content: "\e905";
+}
+.icon-twitter:before {
+    content: "\e906";
+}
+.icon-youtube:before {
+    content: "\e907";
+}

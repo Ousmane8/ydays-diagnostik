@@ -1,0 +1,40 @@
+.products {
+  img {
+    width: 100%;
+  }
+  .col-md-6 {
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    @media (max-width:767px) {
+      margin: 10px 0;
+    }
+  }
+  &.blue-bg {
+    .right {
+      display: flex;
+      align-items: flex-end;
+      text-align: right;
+    }
+    .products-text {
+      color: white;
+    }
+    .main-btn {
+      border-color: white;
+      &:hover {
+        border: white;
+      }
+    }
+  }
+  .products-text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 50px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+}
